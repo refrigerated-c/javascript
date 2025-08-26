@@ -60,4 +60,25 @@ console.log("5" - 2);
 
 let gameCounter = 100
 gameCounter++;
-console.log(gameCounter);
+//console.log(gameCounter);
+
+// The Big Three Conversions
+
+// To Primitive → break things down into simple values (number, string, boolean).
+
+// To Number → "42" → 42, true → 1, false → 0.
+
+// To String → 123 → "123", true → "true".
+
+// To Boolean → Rules:
+
+// 0, NaN, "" (empty), null, undefined → false.
+
+// Everything else → true.
+ 
+
+let a = 5;
+let b = a++;
+
+console.log(a);
+console.log(b)
