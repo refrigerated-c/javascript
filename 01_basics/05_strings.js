@@ -52,6 +52,7 @@ const alphaNumeric = letters.concat(numbers);
 //console.log(9731, 9733, 9842, 0x2f804); -> same like above 
 //console.log(gameName.strike()); -> deprecated , used to for horizontal line over the text
 
+console.log(letters.indexOf("b")); // when it's kind of list or sentence it works on words wise
 
 
 
