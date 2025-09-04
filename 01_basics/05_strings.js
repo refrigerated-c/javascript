@@ -54,7 +54,7 @@ const alphaNumeric = letters.concat(numbers);
 
 console.log(letters.indexOf("b")); // when it's kind of list or sentence it works on words wise
 
-
+// and yes, if there is no such string or whatever u r searching indexOf it will returns => -1
 
 
 
