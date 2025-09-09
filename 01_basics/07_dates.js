@@ -25,10 +25,14 @@ let myTimeStamp = Date.now()
 //console.log(Math.floor(Date.now()/1000)); // in seconds
 
 let newDate = new Date()
-console.log(newDate.getMonth()); // month starts from 0 to 11
-console.log(newDate.getDate()); // date starts from 1 to 31
-console.log(newDate.getDay()); // day starts from 0 to 6 (0 means Sunday and 6 means Saturday)
+//console.log(newDate.getMonth()); // month starts from 0 to 11
+//console.log(newDate.getDate()); // date starts from 1 to 31
+//console.log(newDate.getDay()); // day starts from 0 to 6 (0 means Sunday and 6 means Saturday)
 
-console.log(newDate.toLocaleString('default', {month: 'long'})); // -> for full month name
+//console.log(newDate.toLocaleString('default', {month: 'long'})); // -> for full month name
 
 
+// IN CASE U don't understand//
+
+let newDate1 = new Date()
+console.log(newDate1)
