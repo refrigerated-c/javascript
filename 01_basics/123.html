@@ -1,1 +1,33 @@
-<blink>Hello, world</blink>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+.container {
+    font-size : 30px;
+     text-align:center;
+     margin:70px;
+     padding: 20px;
+     background-color: lightblue;
+        border-radius: 20px;
+        border: 2px solid black;
+}
+#time {
+    font-weight: bold;
+    color: darkblue;
+}
+</style>
+<body>
+    <div class="container">Current time is <span id="time"></span></div>
+    <script>
+        setInterval(updateTime, 1000);
+        function updateTime() {
+            time.innerHTML = new Date(); 
+        }
+    </script>
+</body>
+</html>
+
