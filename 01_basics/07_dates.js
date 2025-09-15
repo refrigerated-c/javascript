@@ -31,51 +31,11 @@ let newDate = new Date()
 
 //console.log(newDate.toLocaleString('default', {month: 'long'})); // -> for full month name
 
-// IN CASE U DON'T UNDERSTAND//
-let date = new Date()
-//console.log(date)  // current date and time
 
-let referenceDate = new Date(0);
-let referenceDate1 = new Date(40000); // 1000 milliseconds = 1 second after 1st Jan 1970
-//console.log(referenceDate1);// this is reference date
+// IN CASE U don't understand//
 
-<<<<<<< HEAD
 let Date1 = new Date()
-console.log(newDate1)
-=======
-//let newDate1 = new Date("2029-04-30")
-//console.log(newDate1.getDay()); // specific date
->>>>>>> 7525af0fa28577c87aec6e60c9f66d451f195cbd
+console.log(Date1)
 
-<<<<<<< HEAD
-
-=======
-//let newDate = new Date(year, month, date, hours, minutes, seconds, milliseconds)
-let newDate1 = new Date(3020, 10, 28, 4, 5, 28, 45)
-console.log(newDate1);
-
-let yr = newDate1.getFullYear()
-console.log("This year is", yr);
-
-let mon = newDate1.getMonth()
-console.log("This month is", mon + 1); // month starts from 0 to 11
-
-let dt = newDate1.getDate()
-console.log("This date is", dt); // date starts from 1 to 31
-
-let day = newDate1.getDay()
-console.log("This day is", day); // day starts from 0 to 6 (0 means Sunday and 6 means Saturday)
-
-let hrs = newDate1.getHours()
-console.log("This hours is", hrs);
-
-let mins = newDate1.getMinutes()
-console.log("This minutes is", mins);
-
-let secs = newDate1.getSeconds()
-console.log("This seconds is", secs);
-
-newDate1.setDate(34)
-newDate1.setMinutes(70)
-console.log(newDate1);
->>>>>>> 7525af0fa28577c87aec6e60c9f66d451f195cbd
+let name = "Saksham"
+console.log(`Hello, my name is ${name} and today's date is ${Date1.toLocaleDateString()}`)
