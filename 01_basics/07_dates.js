@@ -39,9 +39,17 @@ let referenceDate = new Date(0);
 let referenceDate1 = new Date(40000); // 1000 milliseconds = 1 second after 1st Jan 1970
 //console.log(referenceDate1);// this is reference date
 
+<<<<<<< HEAD
+let Date1 = new Date()
+console.log(newDate1)
+=======
 //let newDate1 = new Date("2029-04-30")
 //console.log(newDate1.getDay()); // specific date
+>>>>>>> 7525af0fa28577c87aec6e60c9f66d451f195cbd
 
+<<<<<<< HEAD
+
+=======
 //let newDate = new Date(year, month, date, hours, minutes, seconds, milliseconds)
 let newDate1 = new Date(3020, 10, 28, 4, 5, 28, 45)
 console.log(newDate1);
@@ -70,3 +78,4 @@ console.log("This seconds is", secs);
 newDate1.setDate(34)
 newDate1.setMinutes(70)
 console.log(newDate1);
+>>>>>>> 7525af0fa28577c87aec6e60c9f66d451f195cbd
