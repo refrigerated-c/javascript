@@ -30,7 +30,7 @@
 // //console.log(obj3); // { obj1: { '1': 'a', '2': 'b' }, obj2: { '3': 'a', '4': 'b' } }
 // //console.log(obj3); // { '1': 'a', '2': 'b', '3': 'a', '4': 'b' } //Spread output
 
-// const obj3 =Object.assign({}, obj1,obj2)
+// const obj3 =Object.assign({}, obj1,obj2) //target{}, source -> obj1 & 2
 // //console.log(obj3); //Using {} at the start ensures we don’t accidentally change obj1 or obj2.
 // //Its like saying, "Hey, make me a fresh new object with all these properties, please!"
 
@@ -106,4 +106,17 @@ const user = { "first-name": "Shivangi", "123id": 101, "first name": "Test" };
 // console.log(user["123id"]);      // 101
 // console.log(user["first name"]); // "Test"
 
-console.log(user.first-name); // ERROR - treated as user.first - name → NaN
+///console.log(user.first-name); // ERROR - treated as user.first - name → NaN
+
+
+//****** Prototypes & Inheritance */
+
+function Animal(type) {
+  this.type = type;
+}
+Animal.prototype.speak = function() {
+  return `${this.type} makes a sound`;
+};
+
+const dog = new Animal("Dog");
+console.log(dog.speak()); // Dog makes a sound
