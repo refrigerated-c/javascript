@@ -76,3 +76,26 @@ const {courseInstructor} = course
 //for more de-structing
 const {courseInstructor: instructor} = course
 console.log(instructor);
+
+//const navbar = (props.company) => {
+// }
+//But in React instead of using props. everytime use of {}
+
+const navbar = ({company}) => {
+}
+navbar (company = "Sinaner Co.")
+
+//*****JSON & API FORMAT ***********/
+
+{
+  "name": "Aisha",
+   "gender": "Female"
+  "hobbies": ["reading", "traveling", "coding"]
+} //in object literal
+   // ALSO 
+
+[
+    {},
+    {},
+    {}
+] // object in array
