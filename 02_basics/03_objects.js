@@ -40,4 +40,4 @@ JsUser.greetingTwo = function() {
 
 //console.log(JsUser.greeting); //function is not executed here just reference is printed
 console.log(JsUser.greeting()); //function is executed here 
-console.log(JsUser.greetingTwo()); //function is executed here
+//console.log(JsUser.greetingTwo()); //function is executed here

@@ -49,7 +49,7 @@ function addone(num){
 //addone(5) //not printed we just called the function
 //no error
 
-addTwo(4)  // error coz of 
+//addTwo(4)  // error coz of (last comment)
 const addTwo = function(num){
     return num + 2
 

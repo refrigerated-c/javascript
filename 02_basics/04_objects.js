@@ -1,11 +1,11 @@
 // //const tinderUser = new Object(); // According to hitesh sir it's a Singleton OBJECT, but → it's a constructor syntax → non-singleton (new instance each time).
-// const tinderUser = {}; // & it's a NON-SINGLETON OBJ,  but it's a→ object literal syntax →        non-singleton (new instance each time).
+ const tinderUser = {}; // & it's a NON-SINGLETON OBJ,  but it's a→ object literal syntax →        non-singleton (new instance each time).
 
-// tinderUser.id = "123abc";
-// tinderUser.name = "Sanket";
-// tinderUser.isLoggedIn = false;  
+ tinderUser.id = "123abc";
+ tinderUser.name = "Sanket";
+ tinderUser.isLoggedIn = false;  
 
-// //console.log(tinderUser);
+console.log(tinderUser);
 
 // const regularUser = {
 //     email: "sam@google.com",
@@ -60,7 +60,7 @@
 
 // //console.log(tinderUser.hasOwnProperty('isLoggedIn')); // to find a property exist or no
 
-// //console.log(Object.fromEntries(tinderUser)) -error
+//console.log(Object.fromEntries(tinderUser)) -error
 
 // const course = {
 //     coursename: "js in hindi",
@@ -106,7 +106,7 @@ const user = { "first-name": "Shivangi", "123id": 101, "first name": "Test" };
 // console.log(user["123id"]);      // 101
 // console.log(user["first name"]); // "Test"
 
-///console.log(user.first-name); // ERROR - treated as user.first - name → NaN
+//console.log(user.first-name); // ERROR - treated as user.first - name → NaN
 
 
 //****** Prototypes & Inheritance */

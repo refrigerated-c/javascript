@@ -9,7 +9,7 @@ const balance = new Number(100) //Using number function to explicitly define num
 //console.log(balance.toString().length) //Converts number to string;
 //console.log(balance.toFixed(2)) //Converts number to string with fixed decimal points
 
-const otherNumber = 123.123456
+const otherNumber = 123.1234567923878456
 //console.log(otherNumber.toPrecision(8)) //Converts number to string with specified length (precise krke ya round krke)
 
 const hundreds = 10000000
