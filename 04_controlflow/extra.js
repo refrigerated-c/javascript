@@ -1,25 +1,23 @@
-// console.log("Hey this new tutorial");
-
-// var a = 11
-// var b = 5
-
-// console.log(a + b);
-
 let day;
 let date = new Date().getDay();
  
 switch (date) {
   case 0:
     day = "Sunday";
+    console.log("it's Sunday");
+    
     break;
   case 1:
     day = "Monday";
+     console.log("it's Monday");
     break;
   case 2:
     day = "Tuesday";
+     console.log("it's Tuesday");
     break;
   case 3:
     day = "Wednesday";
+     console.log("it's Wednesday");
     break;
   case 4:
     day = "Thursday";
@@ -30,5 +28,3 @@ switch (date) {
   case  6:
     day = "Saturday";
 }
-
-document.getElementById("demo").innerHTML = "Today is " + day;

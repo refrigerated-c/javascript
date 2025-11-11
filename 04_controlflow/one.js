@@ -26,7 +26,7 @@ if(3 != 2){
 // }// log will be print
 
 if(3 === "3"){
- console.log("executed");
+ //console.log("executed");
  
 }// log will not print becoz data type are differnt
 
@@ -41,10 +41,10 @@ if(3 === "3"){
 const temperature = 41
 
 if (temperature < 50){
-    console.log("temp less than 50");
+    //console.log("temp less than 50");
     
 } else{
-     console.log("Hi! it's too hot here");
+     //console.log("Hi! it's too hot here");
 }
  
 //Var wali problem
@@ -59,6 +59,35 @@ if (temperature < 50){
 
 //Shorthand for if else - implicit way
 
-const balance = 1000
-if (balance > 500) console.log("test"), console.log("test2")//outside scope , but "," and writing 2 line is not a good practice;
+// const balance = 1000
 
+// if (balance > 500) console.log("test"), console.log("test2")//outside scope , but "," and writing 2 line is not a good practice;
+
+// if (balance < 500){
+//     console.log("less than 500");
+// } else if (balance < 750){
+//     console.log("less than 750");
+    
+// } else if (balance < 900){
+//     console.log("less than 900");
+// } else  {
+//     console.log("less than 1200");
+// }
+
+
+const userLoggedIn = true
+const debitCard = true
+const loggedInFromGoogle = false
+const loggedInFromMail = true
+
+ if (userLoggedIn && debitCard){    // "&&" used for if we want all conditions to be true
+     console.log("Allow to buy course");
+ }
+// if (userLoggedIn && debitCard && 2==3){    // 2 is not equal to 3 so result will be not executed
+//     console.log("Allow to buy course");
+// }
+
+if (loggedInFromGoogle || loggedInFromMail){ // "||" is or - one condition should be true
+    console.log("User logged in");
+    
+}
