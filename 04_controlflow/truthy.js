@@ -24,6 +24,30 @@ if (userEmail){
  const emptyObj = {}
 
  if (Object.keys(emptyObj).length === 0){
-    console.log("Console is empty");
+    //console.log("Object is empty");
     
  }
+
+ // Nullish Coalescing Operator (??): null undefined
+ //- To provide a fallback (default) value only when the original value is null or undefined.
+// ??- is more precise than || as it only checks for null & undefined
+
+ let val1;
+  //val1 = 5 ?? 10
+  //val1 = null ?? 10
+  //val1 = undefined ?? 15
+  val1 = null ?? 10 ?? 20
+
+console.log(val1);
+
+let user = { name: null};
+let greeting = user.name?.toUpperCase() ?? "Guest";
+// Output: "SHIVANGI" // if null or undefined then guest
+console.log(greeting);
+
+//Terniary Operator
+// condition ? true : false
+
+const iceTeaPrice = 100
+iceTeaPrice <= 80 ? console.log("less than 80") : console.log("more than 80");
+
