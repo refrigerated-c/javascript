@@ -28,3 +28,6 @@ do {
     score++
 
 } while (score <= 10); //Score is 12 (only score ++ will not executed coz it executes after condtion check & condition prohibits it)
+
+// A while loop is used when the number of iterations is unknown, like reading user input until it meets a condition.
+// A for loop is better when the number of iterations is predefined, like iterating over a fixed range.
