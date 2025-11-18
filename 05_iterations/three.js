@@ -39,11 +39,11 @@ for (const [key, value] of map) {
 }
 // same loop for object
 
-const myObject = {
-    game1:'GTA',
-    game2: 'Counter-Strike'
-}
+// const myObject = {
+//     game1:'GTA',
+//     game2: 'Counter-Strike'
+// }
 for (const [key, value] of myObject) {
-    console.log(key, ':-', value);
+    //console.log(key, ':-', value);
     
 } // no result coz myObject is not iterable

@@ -31,7 +31,7 @@ function printMe(item) {
 // ruby 2 [ 'js', 'py', 'ruby', 'Kerim' ]
 // Kerim 3 [ 'js', 'py', 'ruby', 'Kerim' ]
 
-//Now as we seen that objects in array in three.js , so now let's put loop in it
+//Now as we seen that objects in array in three.js , so now let's put forEach loop in it
 
 const myChar = [
     {
@@ -52,3 +52,8 @@ myChar.forEach((item)=>{
     console.log(item.showName);
     
 })
+
+//ANALYSIS
+// FOR in DESCRIPTION       =>     it works for ARRAY and OBJECT but not works on MAP
+// FOR of DESCRIPTION      =>     it works for ARRAY and MAP[ key, value] but not works on OBJECT.
+// FOR each DESCRIPTION =>     it works for ARRAY, OBJECT and MAP.
