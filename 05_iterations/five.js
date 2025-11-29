@@ -1,9 +1,9 @@
 const coding = ["js", "py", "ruby", "Kerim"]
 
-// coding.forEach( function(item){             //no need to write name as it understands that it's a callback funct for which arr
-//     console.log(item);
+ coding.forEach( function(item){             //no need to write name as it understands that it's a callback funct for which arr
+     //console.log(item);
     
-// })
+ })
 
 //in arrow function
 
@@ -19,7 +19,7 @@ function printMe(item) {
     
 }
 
-// coding.forEach(printMe) //just reference it not execute it with ()
+ //coding.forEach(printMe) //just reference it not execute it with ()
 
 //foreach not only use item or val as param but also others too
 
@@ -49,7 +49,7 @@ const myChar = [
 ]
 
 myChar.forEach((item)=>{
-    console.log(item.showName);
+    //console.log(item.showName);
     
 })
 

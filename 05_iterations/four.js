@@ -30,8 +30,8 @@ map.set('IN', "India")
 map.set('USA', "United States of America")
 map.set('FR', "France")
 
-for (const key in map) {
-   console.log(key);
+// for (const key in map) {
+//    console.log(key);
    
     
-} // no result
+// } // no result

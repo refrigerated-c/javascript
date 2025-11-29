@@ -13,11 +13,11 @@ for (const num of arr) {
     
 }
 
-const greetings = "Hello World!"
-for (const greet of greetings) {
-    //console.log(`Each char is ${greet}`);
+//  const greetings = "Hello World!"
+//  for (const greet of greetings) {
+//     //console.log(`Each char is ${greet}`);
     
-}
+// }
 
 //Maps
 //object holds key-value pairs and remembers the original insertion order(sequence) of the keys
@@ -28,22 +28,22 @@ map.set('IN', "India")
 map.set('USA', "United States of America")
 map.set('FR', "France")
 
-//console.log(map);
-for (const key of map) {
-    //console.log(key); // result will show in array form
+// console.log(map);
+// for (const key of map) {
+//     console.log(key); // result will show in array form
     
-}
-for (const [key, value] of map) {
-    //console.log(key, ':-', value); 
+// }
+// for (const [key, value] of map) {
+//     console.log(key, ':-', value); 
     
-}
+// }
 // same loop for object
 
 // const myObject = {
 //     game1:'GTA',
 //     game2: 'Counter-Strike'
 // }
-for (const [key, value] of myObject) {
+//for (const [key, value] of myObject) {
     //console.log(key, ':-', value);
     
-} // no result coz myObject is not iterable
+//} // no result coz myObject is not iterable

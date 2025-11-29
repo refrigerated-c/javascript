@@ -11,20 +11,20 @@
 
  const myNums =[1,2,3,4,5,6,7,,8,9,10]
 
-// const newNum= myNums.filter(num => 
-//      num > 4
+//  const newNum= myNums.filter(num => 
+//       num > 4
     
-// );
-// console.log(newNum);
+//  );
+ //console.log(newNum);
 
-// const newNum= myNums.filter(num => {
-//      return num > 4
+ const newNum= myNums.filter(num => {
+      return num > 4
 
-// }
-//      //Remember if using {}'scopes' then use retuen keyword too
+ }
+      //Remember if using {}'scopes' then use retuen keyword too
     
-// );
-// console.log(newNum);
+ );
+ //console.log(newNum);
 
 //if want to use forEach
 
@@ -49,8 +49,8 @@ const books = [
     { title: 'Book Nine', genre: 'Non-Fiction', publish: 1981, edition: 1989 },
   ];
 
-//  const userBooks = books.filter( (bk) => bk.genre === 'Non-Fiction' ) 
-//  console.log(userBooks);
+  const userBooks = books.filter( (bk) => bk.genre === 'Non-Fiction' ) 
+  //console.log(userBooks);
  
-const userBooks = books.filter( (bk) => { return bk.publish > 1995 && bk.genre === 'History'})
- console.log(userBooks);
+//const userBooks = books.filter( (bk) => { return bk.publish > 1995 && bk.genre === 'History'})
+ //console.log(userBooks);
