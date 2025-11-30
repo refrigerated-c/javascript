@@ -1,0 +1,24 @@
+difference in .innerHTML, .innerText & .innerContent
+
+Example- 
+ <h1 id="title" class="heading">DOM learning on Chai or Code <span style="display: none;"> test and out</span></h1>
+
+innerHTML result = 'DOM learning on Chai or Code <span style="display: none;"> test and out</span>'
+
+innerContent result = 'DOM learning on Chai or Code test and out'
+
+innerText result = 'DOM learning on Chai or Code'
+
+QuerySelector & QuerySelectorAll
+
+QuerySelector = it selects on one element
+but,
+QuerySelectorAll = it selects all elements in form of nodeList a type of array but not pure array coz if u check in it's prototype it doesn't have map attribute which a array have.
+
+although we have to us it as an arrray like to change or update we need to define through indexing
+
+- if we want to use attributes like map need to convert nodeList to array 1st then use
+or else keep using forEach , etc.
+
+How to convert?
+using => Array.from(whatever u have to convert)
