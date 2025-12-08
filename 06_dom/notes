@@ -22,3 +22,12 @@ or else keep using forEach , etc.
 
 How to convert?
 using => Array.from(whatever u have to convert)
+
+Why gets Elements in HTML Collection?
+Methods for multiple elements: Functions like getElementsByClassName() and getElementsByTagName() are intended to find all elements that share a particular class name or tag name within the document. Since there can be zero, one, or many such elements, the return type is a collection to accommodate all possibilities.
+
+Array-like object: An HTMLCollection is an array-like object that contains a list of HTML elements. It has a length property and allows access to individual elements using an index (e.g., collection[0]). 
+
+Live collection: HTMLCollection objects are "live," meaning they automatically update if the underlying document structure changes (e.g., if elements are added or removed that match the criteria).
+
+A nodelist is a collection of document nodes which includes text nodes , attribute nodes and element nodes. A line break is also counted in nodelist but only first one. All subsequent line breaks are ignored by browser

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document - test</title>
+</head>
+<body style="background-color: #212212; color: #fff; ">
+    <script>
+         
+         
+         const btn = document.createElement('button')
+        
+         btn.id = "myBtn"
+         btn.style.padding = "20px"
+         btn.style.fontSize = "20px"
+         btn.style.borderRadius = "8px"
+         btn.style.color = "white"
+         btn.style.backgroundColor = "green"
+         btn.innerText = "Who's goona die in Season 5"
+
+         document.body.appendChild(btn)
+
+         const arr = ["noah","finn", "milli","sadie", "maya"]
+         const color = ["yellow", "brown", "red", "blue", "black"]
+
+         btn.addEventListener("click", () =>{
+
+            for (let i = 0; i < arr.length; i++){
+                setTimeout(() => {
+                    btn.textContent = arr[i];
+                    btn.style.backgroundColor = color[i];
+                }, i*2000);
+
+            }
+         })
+        
+
+         
+
+        
+    </script>
+</body>
+</html>

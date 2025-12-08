@@ -53,7 +53,7 @@ myChar.forEach((item)=>{
     
 })
 
-//ANALYSIS
-// FOR in DESCRIPTION       =>     it works for ARRAY and OBJECT but not works on MAP
-// FOR of DESCRIPTION      =>     it works for ARRAY and MAP[ key, value] but not works on OBJECT.
-// FOR each DESCRIPTION =>     it works for ARRAY, OBJECT and MAP.
+// ANALYSIS
+//  FOR in DESCRIPTION       =>     it works for ARRAY and OBJECT but not works on MAP
+//  FOR of DESCRIPTION      =>     it works for ARRAY and MAP[ key, value] but not works on OBJECT.
+//  FOR each DESCRIPTION =>     it works for ARRAY, OBJECT and MAP.
