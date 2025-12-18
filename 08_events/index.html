@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>htnml Events </title>
+</head>
+<body style="background-color: #414141; color: aliceblue;">
+    <h2>Amazing image</h2>
+    <div >
+        <ul id="images">
+            <li><img width="200px" id="photoshop" src="https://images.pexels.com/photos/3561339/pexels-photo-3561339.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load" alt="photoshop"></li>
+            <li><img width="200px" id="japan" src="https://images.pexels.com/photos/3532553/pexels-photo-3532553.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load" alt=""></li>
+            <li><img width="200px" id="river" src="https://images.pexels.com/photos/3532551/pexels-photo-3532551.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load" alt=""></li>
+            <li><img width="200px" id="owl" src="https://images.pexels.com/photos/3532552/pexels-photo-3532552.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load" alt="" ></li>
+            <!-- pexels-photo-3532552.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load" alt="" onclick="alert('owl')"></li>  this approach of onclick is not scaleable & feasable in future, else in React -->
+            <li><img width="200px" id="prayer" src="https://images.pexels.com/photos/2522671/pexels-photo-2522671.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load" alt=""></li>
+            <li><a style="color: aliceblue;" href="https://google.com" id="google">Google</a></li>
+        </ul>
+   </div>
+</body>
+<script>
+    // document.getElementById('owl').onclick = function name(params) {
+    //     alert('owl clicked')
+    // } //not a good a approach not gives many propogations / features
+
+     //attachEvent() used when Internet Explorer 
+    //jQuery - on (also a event listner) 
+
+    // document.getElementById('owl').addEventListener('click', function () {
+    //     alert('clicked again')
+    // })// addEventListener gives many features
+
+//    document.getElementById('owl').addEventListener('click', function (e) {
+//         console.log(e)//studying Event Object
+//     }, false)
+//     //false is default 3rd parameter , used in some app (without it maybe it won't start)
+
+    //Events need to study 
+    // type, timestamp, defaultPrevented
+    // target, toElement, srcElement, currentTarget,
+    // clientX, clientY, screenX, screenY
+    // altkey, ctrlkey, shiftkey, keyCode
+
+    //Event Propogation
+    //2 concepts - 1.Event Bubling & 2.Event Capturing
+    //                     |                   |
+    //             (done by false),     (done by true)
+
+    // document.getElementById('images').addEventListener('click', function (e) {
+    //     console.log("Clicked inside the ul")
+    // }, false) //targetId is Images
+
+    // document.getElementById('owl').addEventListener('click', function (e) {
+    //     console.log("Owl Clicked")
+    // }, false)// targetId is owl (which is inside image id(ul))
+
+
+    //On clicking the other photoshop imges 1st console popped
+    //but on Owl clicking - Owl Clicked:-
+//08_events/:51 Clicked inside the ul
+//it is bubling {chote se bda}, means phele 2. wala console log hua [the inner one element] (just like how bubble swells up from small to big ) then 1. wala console [the outer most element]
+
+//Caputuring -> with true 
+//reverse mechanism from big to small
+
+//To stop this tracking
+//document.getElementById('owl').addEventListener('click', function (e) {
+  //      console.log("Owl Clicked")
+  //      e.stopPropagation() //like preventDefault
+ //   }, false)
+
+// document.getElementById('google').addEventListener('click', function (e) {
+//         console.log("google Clicked")
+//         e.preventDefault();
+//         e.stopPropagation()
+//     }, false)
+
+// document.querySelector('#images').addEventListener('click', function (e) {
+//     console.log(e.target.parentNode); // on clicking phtos target is   - img
+//     let removeIt = e.target.parentNode //parent of target (li)
+//     removeIt.remove()
+    //amother complicated method
+    //removeIt.parentNode.removeChild(removeIt)//parent of li (ul) phir uska child yani <li> remove it
+    //aap aese aa rhi thi
+    
+    //decluttering the mess
+    document.querySelector('#images').addEventListener('click', function (e) {
+    console.log(e.target.tagName ); 
+    if (e.target.tagName == 'IMG'){
+        console.log(e.target.id)
+        let removeIt = e.target.parentNode 
+     removeIt.remove()
+
+    }
+    
+}, false)
+
+    
+
+</script>
+</html>

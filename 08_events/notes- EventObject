@@ -1,0 +1,17 @@
+Notes on Events:-
+Events are mainly of two types:
+Browser Events and Environment Events.
+
+These events tell us things like:
+Where the mouse was clicked
+The mouse position (X and Y coordinates)
+The window’s height and width (viewport)
+The time when the event happened (timestamp)
+
+Practice Questions / Applications
+Create an application where, when a user clicks on an image or any element, the time of the click (timestamp) is displayed.
+
+Create a div where, whenever the user clicks inside it, a circle appears at the exact click position using the mouse’s X and Y coordinates.
+
+event propagation: false = Bubbling (bottom to top)
+                                   true = Capturing (top to bottom)
