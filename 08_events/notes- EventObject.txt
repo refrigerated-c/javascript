@@ -1,0 +1,109 @@
+Notes on Events:-
+Events are mainly of two types:
+Browser Events and Environment Events.
+
+These events tell us things like:
+Where the mouse was clicked
+The mouse position (X and Y coordinates)
+The window’s height and width (viewport)
+The time when the event happened (timestamp)
+
+Practice Questions / Applications
+Create an application where, when a user clicks on an image or any element, the time of the click (timestamp) is displayed.
+
+Create a div where, whenever the user clicks inside it, a circle appears at the exact click position using the mouse’s X and Y coordinates.
+
+event propagation: false = Bubbling (bottom to top)
+                                   true = Capturing (top to bottom)
+
+*--event.defaultPrevented--*
+Prevents browser's default actions - click, submit, link click
+It gives boolean value on whether default was prevented = true
+for not prevented = false
+
+Example- 
+//<a href="https://google.com" id="link">Go to Google</a>
+//document.querySelector('#link').addEventListener('click', function (e) {
+    e.preventDefault()
+    console.log(e.defaultPrevented)
+})
+//Output = true
+
+//document.querySelector('#link').addEventListener('click', function (e) {
+    console.log(e.defaultPrevented)
+})
+//Output = false
+
+//Used, if invalid form is clicked to submit so to prevent it., etc.
+
+*--timestamp--*
+it tells how much millisecinds passed since the page loaded till event of action (click or submit or whatever)
+
+document.addEventListener('click', function (event) {
+    console.log(event.timeStamp)
+})
+
+*--event.type--*
+
+It gives the browser which event happend like , click, keypressing(keydown), key-releaing (keyup)
+Example- 
+<p>Press any key or click the mouse to get the event type.</p>
+<p id="log"></p>
+
+function getEventType(event) {
+  const log = document.getElementById("log");
+
+  // Add the event type text on top of previous logs
+  log.innerText = `${event.type}\n${log.innerText}`;
+}
+
+// Keyboard events
+document.addEventListener("keydown", getEventType);
+document.addEventListener("keypress", getEventType);
+document.addEventListener("keyup", getEventType);
+
+// Mouse events
+document.addEventListener("mousedown", getEventType);
+document.addEventListener("mouseup", getEventType);
+document.addEventListener("click", getEventType);
+
+*--target--*
+
+tells on which element event actually happend on
+Example- 
+<ul id="myList">
+  <li>Apple</li>
+  <li>Banana</li>
+</ul>
+<script>
+    document.body.addEventListener("click", function(event) {
+      //currentTarget tells where the listener is applied
+  console.log("You clicked on:", event.currentTarget); //body
+  console.log("You clicked on:", event.target); //li
+});
+
+</script>
+</body>
+</html>
+
+*---toElement--*
+ property is a non-standard, legacy Internet Explorer feature for event handling.In modern JS event.target
+
+
+*--clientX, Y , screenX, Y --*
+
+clientX	-- Horizontal inside browser window	-- Left edge of browser window
+clientY --	Vertical inside browser window	-- Top of browser window
+screenX	-- Horizontal on your whole screen	-- Left side of your screen
+screenY-- 	Vertical on your whole screen	-- Top of your screen
+
+*--altkey, ctrlkey, shiftkey, keyCode--*
+
+
+these events tells wheter particular key was pressed while clicking or not in boolean value
+Example - 
+document.addEventListener('click',e) =>{
+  console.log(event.shiftkey)
+}
+,etc.
+//Used so to perform some special actions

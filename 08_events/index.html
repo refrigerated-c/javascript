@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>htnml Events </title>
+    <title>html Events </title>
 </head>
 <body style="background-color: #414141; color: aliceblue;">
     <h2>Amazing image</h2>
@@ -80,7 +80,7 @@
 //     console.log(e.target.parentNode); // on clicking phtos target is   - img
 //     let removeIt = e.target.parentNode //parent of target (li)
 //     removeIt.remove()
-    //amother complicated method
+    //another complicated method
     //removeIt.parentNode.removeChild(removeIt)//parent of li (ul) phir uska child yani <li> remove it
     //aap aese aa rhi thi
     
@@ -91,7 +91,7 @@
         console.log(e.target.id)
         let removeIt = e.target.parentNode 
      removeIt.remove()
-
+//📌 You are deleting the container (li), not just what’s inside it(img).
     }
     
 }, false)
