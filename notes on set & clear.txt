@@ -1,0 +1,9 @@
+setTimeout() is for executing a function 'once' after a specified delay.
+//Syntax - setTimeout(function, delay, arg1, arg2,...)
+clearTimeout()- to stop the execution of setInterval.
+
+
+setInterval() is for executing a function repeatedly at specified intervals until explicitly cleared.
+//Syntax -  setInterval(function, delay);
+clearInterval() - to stop the execution of setInterval.
+//Syntax  -clearInterval('name of varible/const in which setInterval stored')
