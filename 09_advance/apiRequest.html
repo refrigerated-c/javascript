@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body style="background-color: #212121;">
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae, in earum nobis facilis et molestias sequi libero saepe sapiente quaerat quasi! Illum nam distinctio dolorem labore iste doloremque eum numquam ex, commodi aliquam natus ullam error quas possimus repudiandae qui officia nisi? Ex!
+</body>
+<script>
+    const requestUrl = 'https://api.github.com/users/refrigerated-c'
+    const supaman = new XMLHttpRequest();
+    supaman.open('GET', requestUrl);
+    console.log(supaman.readyState);
+    //to check continuous change below
+    supaman.onreadystatechange = function(){
+        console.log(supaman.readyState);
+        if (supaman.readyState == 4){
+            const data = JSON.parse(this.responseText);
+            console.log(typeof data);
+            console.log(data.followers);
+            
+            
+        }
+    }
+    supaman.send()
+    
+    
+</script>
+</html>
