@@ -1,46 +1,83 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
 <style>
-    body{
-        background-color: grey;
-        color:aliceblue
+    body {
+        background-color: rgb(125, 153, 248);
+        color: aliceblue
     }
-    .card{
-        display:flex;
+
+    .card {
+        display: flex;
+        flex-direction: column;
         justify-content: center;
         align-items: center;
-        height:100vh;
+        height: 100vh;
     }
-    .image{
-        border: 5px;
+
+    #image {
+        border: 5px solid black;
+        height: 150px;
+        width: 150px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #image img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+
+    }
+
+    #text {
+        margin-top: 15px;
     }
 
 </style>
+
 <body>
     <div class="card">
-    <div class="image">IMG</div>
-    <div class="text">TEXT</div>
+        <div id="image">IMG</div>
+        <div id="text"></div>
     </div>
 </body>
 
 <script>
     const requestUrl = 'https://api.github.com/users/hiteshchoudhary'
     const xhr = new XMLHttpRequest()
-    xhr.open('GET', requestUrl);
-    console.log(xhr.readyState);
-    xhr.onreadystatechange = function(){
-        console.log(xhr.readyState);
-        if (xhr.readyState == 4){
+
+    xhr.open('GET', requestUrl)
+
+    xhr.onreadystatechange = function () {
+
+        if (xhr.readyState === 4) {
+
             const data = JSON.parse(this.responseText)
-            console.log(data.avatar_url)
+
+            const pict = data.avatar_url
+            const follow = data.followers
+
+            // image pasting
+            const imgs = document.getElementById('image')
+            imgs.innerHTML = `<img src="${pict}" alt="SirJi">`
+
+            const follower = document.getElementById('text')
+            follower.innerText = `Followers: ${follow}`
         }
     }
+
     xhr.send()
 
+
+
+
 </script>
+
 </html>

@@ -7,3 +7,5 @@ setInterval() is for executing a function repeatedly at specified intervals unti
 //Syntax -  setInterval(function, delay);
 clearInterval() - to stop the execution of setInterval.
 //Syntax  -clearInterval('name of varible/const in which setInterval stored')
+
+

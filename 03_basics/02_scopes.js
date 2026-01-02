@@ -24,6 +24,7 @@ function one(){
     two()
 }
 one()
+
 //child function can access parent's variable
 //just like functn two can access username from functn 1
 
