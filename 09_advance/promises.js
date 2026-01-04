@@ -36,3 +36,36 @@ promiseThree.then(function(user){
     console.log(user);
     
 })
+
+const promiseFour = new Promise (function(resolve, reject){
+    setTimeout(function(){
+        let error = false;
+        if (!error){
+            resolve({username:"fatmagul", password:"mustafa"})
+        } else{
+            reject('ERROR: Something went wrong')
+        }
+    },1000)
+})
+
+// const username = promiseFour.then((user)=>{
+//     console.log(user);
+//     return user.username    
+
+// })
+// console.log(username) //error in this way
+
+promiseFour
+.then((user)=>{
+    console.log(user);
+    return user.username //if not this instead of 'fatmagul' result will be undefined
+    
+}).then((username)=>{
+    console.log(username);
+    
+}).catch((err)=>{
+    console.log(err);
+    
+})
+
+
