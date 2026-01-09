@@ -125,4 +125,4 @@ fetch ('https://jsonplaceholder.typicode.com/users')
 .then((data)=>{
     console.log(data);
     
-}).catch((err)=> console.log(err))
+}).catch((err)=> console.log(err)) //read more on fetch https://www.geeksforgeeks.org/javascript/javascript-fetch-method/
