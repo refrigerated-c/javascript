@@ -14,7 +14,7 @@ like - toLowerCase, UpperCase, Date , Promises
 - to cope up from spaghetti code issues
 
 ## parts of OOP 
-Object literal {}
+- Object literal {}
 
 - Constructor function
 - Prototypes
@@ -23,6 +23,6 @@ Object literal {}
 
 ## 4 pillars
 - Abstraction - hiding details example- fetch() as it hides the internal functionality 
-- Encapsulation - wrap up data , what needed and what not 
-- Inheritance - ** in prototypes **
-- Polymorphism  - poly (many) morphism (swarup)
+- Encapsulation - wrap up data , what needed and what not/ ensures that one team can change data representation and algorithms without causing other team's code change.
+- Inheritance - ** in prototypes ** ensures code reuse.
+- Polymorphism  - poly (many) morphism (swarup)/ objects to behave differently using the same interface.
