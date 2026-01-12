@@ -23,7 +23,7 @@ const user = {
 }
 //console.log(user.username); //to access properties
 //console.log(user.getUserDetails()); // to run method
-//console.log(this); // result is {} an empty object as nodejs it is , while in browser it provides many properties or say global window object
+//console.log(this); // result is {} an empty object as nodejs it is , while in browser it provides many properties or say  global window object
 
 
 //Constructor

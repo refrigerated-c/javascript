@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Console</title>
+</head>
+<body>
+    Hello World
+</body>
+<script>
+// console it self is a object , geenerally used to debug code
+console.log("Hello user") //log used for general info display ,same used for debugging
+//Point to be noted -> when we log some message on browser so with the message printed undefined is also printed  which is the return value of the last executed statement.
+console.error("Ths is a err message") // used for error message in red
+console.warn("don't drive and drive") // used for warning message in yellow
+console.info("This is my laptop") // used for general info
+console.info("%cThis is my laptop", 'color:blue;') // can style it too
+obj ={a:1, b:2, c:3}
+console.table(obj) //table to display in table format
+console.assert(2>55) //logs an error message if the given condition is false, helping to catch issues during development. If the condition is true, it produces no output.
+console.clear()// clears the console
+console.log(console) //to view other console methods
+console.time("t1")
+for(let i=0; i<=5; i++){
+    console.log("hi");
+    
+} 
+console.timeEnd("t1")
+//note time from .time to .timeEnd, used to measure how much it takes time to execute a code
+
+</script>
+</html>
